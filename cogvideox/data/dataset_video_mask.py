@@ -316,7 +316,7 @@ class VideoDataset(Dataset):
         num_videos = len(data_info)
         video_path_list = []
         text_list = []
-        controlnet_video_list = []
+        cond_image_list = []
         for i in range(num_videos):
             if data_info[i].get('type', 'image') == 'video':
                 if self.num_cond == 0:
@@ -324,10 +324,10 @@ class VideoDataset(Dataset):
                     video_path_list.append(video_path)
                     text_list.append(text)
                 elif self.num_cond >= 1:
-                    video_path, text, controlnet_video = data_info[i]['file_path'], data_info[i]['text'], data_info[i]['controlnet_video']
+                    video_path, text, cond_image = data_info[i]['file_path'], data_info[i]['text'], data_info[i]['cond_image']
                     video_path_list.append(video_path)
                     text_list.append(text)
-                    controlnet_video_list.append(controlnet_video)
+                    cond_image_list.append(cond_image)
             else:
                 raise ValueError(f"Not support image input.")
 
@@ -371,8 +371,8 @@ class VideoDataset(Dataset):
             frames_list.append(frames)
             
         cond_frames_list = []
-        for controlnet_video in controlnet_video_list:
-            with VideoReader_contextmanager(controlnet_video, num_threads=2) as video_reader:
+        for cond_image in cond_image_list:
+            with VideoReader_contextmanager(cond_image, num_threads=2) as video_reader:
                 try:
                     indices = np.linspace(0, self.video_sample_n_frames, self.video_sample_n_frames + 1, dtype=int)
                     sample_args = (video_reader, indices)
