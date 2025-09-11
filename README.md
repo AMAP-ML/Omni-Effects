@@ -99,12 +99,10 @@ We would like to thank the authors of [CogVideoX](https://github.com/zai-org/Cog
 # Citation
 
 ```
-@misc{mao2025omnieffects,
-      title={Omni-Effects: Unified and Spatially-Controllable Visual Effects Generation}, 
-      author={Fangyuan Mao and Aiming Hao and Jintao Chen and Dongxia Liu and Xiaokun Feng and Jiashu Zhu and Meiqi Wu and Chubin Chen and Jiahong Wu and Xiangxiang Chu},
-      year={2025},
-      eprint={2508.07981},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{mao2025omni,
+  title={Omni-Effects: Unified and Spatially-Controllable Visual Effects Generation},
+  author={Mao, Fangyuan and Hao, Aiming and Chen, Jintao and Liu, Dongxia and Feng, Xiaokun and Zhu, Jiashu and Wu, Meiqi and Chen, Chubin and Wu, Jiahong and Chu, Xiangxiang},
+  journal={arXiv preprint arXiv:2508.07981},
+  year={2025}
 }
 ```
