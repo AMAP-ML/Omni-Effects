@@ -7,6 +7,7 @@
 
 # 🔥 Updates
 
+- [2025/11] *Omni-Effects* is accepted by AAAI 2026 !
 - [2025/08] We release the CogVideoX-1.5 finetuned on our Omni-VFX dataset !
 - [2025/08] We release the controllable single-VFX/Multi-VFX version of Omni-Effects!
 
