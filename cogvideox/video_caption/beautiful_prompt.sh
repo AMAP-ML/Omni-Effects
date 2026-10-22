@@ -1,3 +1,0 @@
-OPENAI_API_KEY="7YwLgXi4qrDTNiGSdpU9CDwY" OPENAI_BASE_URL="https://pre-lmops.amap.com/open_api/v1/chat" python beautiful_prompt.py \
---model "gpt4o" \
---prompt "a dish of sweet and sour stir-fried vegetables. The camera steadily rotates and moves forward towards the dish, capturing the vibrant colors and textures. Ensure that steam is visibly rising from the food, highlighting its freshness and warmth. The video is of high quality, and the view is very clear. High quality, masterpiece, best quality, highres, ultra-detailed, fantastic."
